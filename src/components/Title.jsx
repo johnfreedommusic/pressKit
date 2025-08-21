@@ -19,8 +19,8 @@ const TitleDiv = styled.div`
     margin: 0 auto 0 auto;
     background: ${({ theme }) =>
       theme.name === "light"
-        ? "linear-gradient(to right, var(--bs-primary), #D3D3D3)"
-        : "linear-gradient(to left, var(--bs-primary), var(--bs-light))"};
+        ? "linear-gradient(to right, #ffdc6f, #D3D3D3)"
+        : "linear-gradient(to left, #ffdc6f, var(--bs-light))"};
   }
 `;
 // #endregion

@@ -11,6 +11,8 @@ import defaultLogo from "../images/defaultNavLogo.svg";
 // Components
 import { Link as ScrollLink } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
+// Config
+import { navLogoDark, navLogoLight } from "../config";
 import ThemeToggle from "./ThemeToggle";
 
 // #region constants
@@ -21,10 +23,10 @@ const navLinks = {
   ],
   to: [
     { id: "1T", name: "Home", to: "Home" },
-    { id: "2T", name: "About Me", to: "About" },
-    { id: "3T", name: "Skills", to: "Skills" },
-    { id: "4T", name: "Projects", to: "Projects" },
-    { id: "5T", name: "Contact", to: "Contact" },
+    { id: "2T", name: "Bio", to: "Bio" },
+    { id: "3T", name: "Musica", to: "Musica" },
+    { id: "4T", name: "Video", to: "Video" },
+    { id: "5T", name: "Contatti", to: "Contatti" },
   ],
 };
 // #endregion
@@ -39,10 +41,7 @@ const StyledDiv = styled.div`
     height: var(--nav-height);
   }
 
-  .logo-img {
-    background: ${({ theme }) =>
-      theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
-  }
+  .logo-img {}
 `;
 // #endregion
 
@@ -74,10 +73,15 @@ const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
           <Navbar.Brand>
             <img
               alt="Logo"
-              src={Logo === null ? defaultLogo : Logo}
-              width="35"
-              height="35"
-              className="rounded-circle logo-img"
+              src={
+                Logo === null
+                  ? defaultLogo
+                  : theme === "light"
+                  ? navLogoLight || Logo
+                  : navLogoDark || Logo
+              }
+              style={{ height: 35 }}
+              className="logo-img"
             />
           </Navbar.Brand>
           <Navbar.Toggle

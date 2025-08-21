@@ -9,7 +9,7 @@ import SocialLinks from "./SocialLinks";
 // #region styled-components
 const StyledFooter = styled.footer`
   height: calc(var(--nav-height) + 1rem);
-  background: var(--bs-primary);
+  background: #ffdc6f;
 
   a {
     color: ${({ $mode }) => {

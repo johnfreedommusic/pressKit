@@ -7,7 +7,8 @@ Variables
 ===============
 */
 :root {
-  --border: 1px solid var(--bs-primary);
+  --border: 1px solid #ffdc6f;
+  --bs-border-color: #ffdc6f;
   --transition: all 0.3s linear;
   --nav-height: 55px;
   --min-footer-height: 11vh;
@@ -57,7 +58,7 @@ a:hover {
 
 .page-item.active .page-link {
   background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
+  border-color: #ffdc6f;
 }
 
 @media screen and (min-width: 800px) {

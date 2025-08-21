@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import GH from "../images/GH.svg";
+import Logo from "../images/logo.svg";
 // Components
 import { Card } from "react-bootstrap";
 
@@ -66,16 +66,16 @@ const propTypes = {
   description: PropTypes.string,
   image: PropTypes.node,
   name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
 };
 
-const ProjectCard = ({ demo, description, image, name, url }) => {
+const ProjectCard = ({ demo, description, image, name }) => {
   return (
     <StyledCard>
       <Card>
         <Card.Img
           variant="top"
-          src={image ? image : GH}
+          src={image ? image : Logo}
           alt={name}
           className="mx-auto"
         />
@@ -89,12 +89,7 @@ const ProjectCard = ({ demo, description, image, name, url }) => {
             </Card.Link>
           ) : null}
         </Card.Body>
-        <Card.Footer className="text-center">
-          <Card.Link href={url}>
-            {"View on GitHub "}
-            <Icon icon="icomoon-free:github" />
-          </Card.Link>
-        </Card.Footer>
+        {/* Footer intentionally left empty: removed GitHub links */}
       </Card>
     </StyledCard>
   );

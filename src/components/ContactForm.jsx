@@ -74,28 +74,28 @@ const ContactForm = () => {
     <StyledForm>
       <Form noValidate validated={isValidated} onSubmit={handleSubmit}>
         <Form.Group className="mx-auto mb-3 form-group" controlId="name">
-          <Form.Label>Name</Form.Label>
-          <Form.Control required type="text" placeholder="Your name" />
+          <Form.Label>Nome</Form.Label>
+          <Form.Control required type="text" placeholder="Il tuo nome" />
           <Form.Control.Feedback type="invalid">
-            <h5>Name must be at least one character.</h5>
+            <h5>Il nome deve essere almeno di un carattere.</h5>
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mx-auto mb-3 form-group" controlId="email">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Indirizzo email</Form.Label>
           <Form.Control
             required
             pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
             placeholder="someone@something.com"
           />
           <Form.Control.Feedback type="invalid">
-            <h5>Please enter a valid email.</h5>
+            <h5>Inserisci un indirizzo email valido.</h5>
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mx-auto mb-3 form-group" controlId="message">
-          <Form.Label>Message</Form.Label>
-          <Form.Control required as="textarea" placeholder="Your message..." />
+          <Form.Label>Messaggio</Form.Label>
+          <Form.Control required as="textarea" placeholder="Il tuo messaggio..." />
           <Form.Control.Feedback type="invalid">
-            <h5>Please provide a valid message.</h5>
+            <h5>Inserisci un messaggio valido.</h5>
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mx-auto text-center form-group">
@@ -119,7 +119,7 @@ const ContactForm = () => {
             onClose={() => setSuccess(false)}
             dismissible
           >
-            <Alert.Heading>Success! I will contact you soon.</Alert.Heading>
+            <Alert.Heading>Messaggio inviato con successo! Ti risponderò il prima possibile.</Alert.Heading>
           </Alert>
           <Alert
             show={danger}
@@ -131,7 +131,7 @@ const ContactForm = () => {
           </Alert>
           <Alert show={!formspreeUrl} variant="danger">
             <Alert.Heading>
-              You must provide a valid formspree url in src/config.js
+              Devi fornire un URL formspree valido in src/config.js
             </Alert.Heading>
           </Alert>
         </Form.Group>

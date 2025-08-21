@@ -16,10 +16,10 @@ const StyledSection = styled.section`
 // #region component
 const Contact = () => {
   return (
-    <Element name={"Contact"} id="contact">
+    <Element name={"Contatti"} id="contatti">
       <StyledSection className="d-flex flex-column justify-content-center">
         <Container className="d-flex justify-content-center">
-          <Title size={"h2"} text={"Contact"} />
+          <Title size={"h2"} text={"Contatti"} />
         </Container>
         <Container>
           <ContactForm />

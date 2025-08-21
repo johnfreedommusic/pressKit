@@ -2,11 +2,11 @@ import React from "react";
 // Styles
 import styled from "styled-components";
 // State
-import { useGetUsersQuery, useGetSocialsQuery } from "../app/apiSlice";
+import { useGetSocialsQuery } from "../app/apiSlice";
 // Icons
 import { Icon } from "@iconify/react";
 // Config
-import { Blog } from "../config";
+import { Blog, socialLinks } from "../config";
 
 // #region styled-components
 const StyledSocialLinks = styled.div`
@@ -18,7 +18,6 @@ const StyledSocialLinks = styled.div`
 
 // #region component
 const SocialLinks = () => {
-  const { data: userData } = useGetUsersQuery();
   const { isSuccess, error, data: socialsData } = useGetSocialsQuery();
 
   React.useEffect(() => {
@@ -31,13 +30,31 @@ const SocialLinks = () => {
 
   return (
     <StyledSocialLinks>
-      <a
-        href={userData.html_url}
-        aria-label="Check out my GitHub profile."
-        className="link-icons"
-      >
-        <Icon icon="icomoon-free:github" />
-      </a>
+      {socialLinks.instagram && (
+        <a href={socialLinks.instagram} aria-label="Instagram" className="link-icons">
+          <Icon icon="fa-brands:instagram" />
+        </a>
+      )}
+      {socialLinks.tiktok && (
+        <a href={socialLinks.tiktok} aria-label="TikTok" className="link-icons">
+          <Icon icon="fa-brands:tiktok" />
+        </a>
+      )}
+      {socialLinks.youtube && (
+        <a href={socialLinks.youtube} aria-label="YouTube" className="link-icons">
+          <Icon icon="fa-brands:youtube" />
+        </a>
+      )}
+      {socialLinks.spotify && (
+        <a href={socialLinks.spotify} aria-label="Spotify" className="link-icons">
+          <Icon icon="fa6-brands:spotify" />
+        </a>
+      )}
+      {socialLinks.soundcloud && (
+        <a href={socialLinks.soundcloud} aria-label="SoundCloud" className="link-icons">
+          <Icon icon="fa6-brands:soundcloud" />
+        </a>
+      )}
       {isSuccess &&
         socialsData.map((element, index) => {
           let icon;
@@ -73,15 +90,7 @@ const SocialLinks = () => {
             </a>
           );
         })}
-      {userData.blog && (
-        <a
-          href={userData.blog}
-          aria-label="External link"
-          className="link-icons"
-        >
-          {Blog ? Blog : <Icon icon="ph:link-bold" />}
-        </a>
-      )}
+      {/* Blog link intentionally removed */}
     </StyledSocialLinks>
   );
 };

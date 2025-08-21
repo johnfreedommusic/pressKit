@@ -10,15 +10,23 @@ import HeroDark from "./images/hero-dark.jpg";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
+import ImmigratoInAmericaArt from "./images/IMMIGRATO IN AMERICA.png";
+import NavLogoDark from "./images/Logo Longer White.png";
+import NavLogoLight from "./images/Logo Longer.png";
+import Art28 from "./images/28.png";
+import CopertinaNuovaVammazzo from "./images/Copertina Nuova V'ammazzo.png";
+import CopCriminaleJohnCopia from "./images/COP CRIMINALE JOHN - Copia.jpg";
 
 /* START HERE
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "johnfreedommusic";
 
-// Navbar Logo image
-export const navLogo = null;
+// Navbar Logo images
+export const navLogo = NavLogoDark; // legacy single export (dark variant)
+export const navLogoDark = NavLogoDark;
+export const navLogoLight = NavLogoLight;
 
 /* Main
  ************************************************************** 
@@ -35,7 +43,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "John Freedom è un giovane immigrato italiano vissuto in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.";
 
 /* Skills
  ************************************************************** 
@@ -82,11 +90,7 @@ export const skillData = [
     skill: <Icon icon="bi:git" className="display-4" />,
     name: "Git",
   },
-  {
-    id: 9,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
-    name: "GitHub",
-  },
+  // Removed GitHub skill icon
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
@@ -106,12 +110,84 @@ export const projectCardImages = [
   },
 ];
 
+/* Music
+ **************************************************************
+  Add your songs below. For each song provide:
+  - name: string (song title)
+  - artwork: an imported image (optional, falls back to Logo)
+  - previewUrl: direct URL to an audio preview (mp3/m4a/ogg). Leave null to hide player
+  - links: per-platform URLs. Leave any null to hide that platform icon
+*/
+export const musicData = [
+  {
+    id: 1,
+    name: "Immigrato in America",
+    artwork: ImmigratoInAmericaArt,
+    previewUrl: null,
+    links: {
+      spotify: "https://open.spotify.com/track/1X8EdHqO1GPqAjKjfol6Hb?si=vUkx9psZQvmDpUkSKSkCnw&context=spotify%3Aalbum%3A7aOq7l2AMRvh6fv44qpbM1",
+      appleMusic: null,
+      amazonMusic: null,
+      soundcloud: null,
+    },
+  },
+  {
+    id: 2,
+    name: "Storia di un brav'uomo",
+    artwork: Art28,
+    previewUrl: null,
+    links: {
+      spotify: "https://open.spotify.com/album/2nYSiCOQdQbVoVd6s136ky?si=MnMWaEa3SWe9WD9DcMkt8w",
+      appleMusic: null,
+      amazonMusic: null,
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/storia-di-un-bravuomo",
+    },
+  },
+  {
+    id: 3,
+    name: "V'ammazzo",
+    artwork: CopertinaNuovaVammazzo,
+    previewUrl: null,
+    links: {
+      spotify: "https://open.spotify.com/album/6MOPDcHWH88BoD8Npg359T?si=hiJXwe6MTDGp4mLUKzqghA",
+      appleMusic: null,
+      amazonMusic: null,
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/master-vammazzo-2",
+    },
+  },
+  {
+    id: 4,
+    name: "Mente Criminale",
+    artwork: CopCriminaleJohnCopia,
+    previewUrl: null,
+    links: {
+      spotify: "https://open.spotify.com/track/5DNnQxLinbzS4tTqlPeDA5?si=8a6704702eed47cd",
+      appleMusic: null,
+      amazonMusic: null,
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/mente-criminale-4_master_1",
+    },
+  },
+];
+
 /* Contact Info
  ************************************************************** 
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/xnnzkbqp";
+
+/* Custom Social Links
+ **************************************************************
+  Add your social links below to show icons in the footer. Leave as null to hide.
+  Example: "https://instagram.com/your_username"
+*/
+export const socialLinks = {
+  instagram: "https://www.instagram.com/_johnfreedom/",
+  tiktok: "https://www.tiktok.com/@john.freedom60",
+  youtube: null,
+  spotify: "https://open.spotify.com/artist/1Rf0wOiVqQNTdkODZj6JNX?si=5uugTnmDRBugpd_oXuuFkw",
+  soundcloud: "https://soundcloud.com/john-freedom-832358450",
+};
 
 // Footer icons theme (light or dark)
 export const footerTheme = "dark";

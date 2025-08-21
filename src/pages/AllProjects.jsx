@@ -147,7 +147,6 @@ const AllProjects = () => {
                         image={element.image}
                         name={element.name}
                         description={element.description}
-                        url={element.html_url}
                         demo={element.homepage}
                       />
                     </Col>
@@ -160,7 +159,6 @@ const AllProjects = () => {
                         image={element.image}
                         name={element.name}
                         description={element.description}
-                        url={element.html_url}
                         demo={element.homepage}
                       />
                     </Col>
