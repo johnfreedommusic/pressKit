@@ -5,8 +5,6 @@
 
 
 
-[Segui John Freedom su IG](https://choosealicense.com/licenses/mit/)
-
 [Segui John Freedom su IG](https://www.instagram.com/)
 
 [Segui John Freedom su TikTok](https://www.tiktok.com/@john.freedom60)
