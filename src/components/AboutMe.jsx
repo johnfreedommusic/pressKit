@@ -31,8 +31,9 @@ const StyledAboutMe = styled.section`
     margin: 0 auto;
     aspect-ratio: 4 / 5;
     border: none;
-    overflow: hidden;
+    overflow: visible;
     background: var(--bs-body-bg);
+    padding: 0 2rem;
   }
 
   .photo-img {
@@ -65,8 +66,8 @@ const StyledAboutMe = styled.section`
     border: none;
     z-index: 1;
   }
-  .slide.left { left: -4%; }
-  .slide.right { right: -4%; }
+  .slide.left { left: 0; }
+  .slide.right { right: 0; }
 
   .arrow {
     position: absolute;
@@ -82,6 +83,16 @@ const StyledAboutMe = styled.section`
 
   .arrow.left { left: 0.25rem; }
   .arrow.right { right: 0.25rem; }
+
+  /* Move arrows slightly outward on non-mobile devices */
+  @media screen and (min-width: 768px) {
+    .arrow.left { 
+      left: -6rem; 
+    }
+    .arrow.right { 
+      right: -6rem; 
+    }
+  }
 `;
 // #endregion
 

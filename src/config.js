@@ -17,6 +17,12 @@ import Art28 from "./images/28.png";
 import CopertinaNuovaVammazzo from "./images/Copertina Nuova V'ammazzo.png";
 import CopCriminaleJohnCopia from "./images/COP CRIMINALE JOHN - Copia.jpg";
 
+// Local Audio Files (add your audio files to the src/audio directory)
+import ImmigratoInAmericaAudio from "./audio/immigrato-in-america.mp3";
+import StoriaDiUnBravuomoAudio from "./audio/storia-di-un-bravuomo.mp3";
+import VammazzoAudio from "./audio/vammazzo.mp3";
+import MenteCriminaleAudio from "./audio/mente-criminale.mp3";
+
 /* START HERE
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
@@ -115,7 +121,7 @@ export const projectCardImages = [
   Add your songs below. For each song provide:
   - name: string (song title)
   - artwork: an imported image (optional, falls back to Logo)
-  - previewUrl: direct URL to an audio preview (mp3/m4a/ogg). Leave null to hide player
+  - previewUrl: local audio file path (mp3/m4a/ogg). Leave null to hide player
   - links: per-platform URLs. Leave any null to hide that platform icon
 */
 export const musicData = [
@@ -123,23 +129,23 @@ export const musicData = [
     id: 1,
     name: "Immigrato in America",
     artwork: ImmigratoInAmericaArt,
-    previewUrl: null,
+    previewUrl: ImmigratoInAmericaAudio,
     links: {
       spotify: "https://open.spotify.com/track/1X8EdHqO1GPqAjKjfol6Hb?si=vUkx9psZQvmDpUkSKSkCnw&context=spotify%3Aalbum%3A7aOq7l2AMRvh6fv44qpbM1",
-      appleMusic: null,
-      amazonMusic: null,
-      soundcloud: null,
+      appleMusic: "https://music.apple.com/us/album/immigrato-in-america-single/1784125290",
+      amazonMusic: "https://music.amazon.it/albums/B0DPPKPKKV?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_HCqhhEvIqiC2h5i6Oz3iuwAZ3",
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/john-freedom-immigrato-in?si=2eb5dc9ee05a4cfe8e8c1640ec669e6e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
   },
   {
     id: 2,
     name: "Storia di un brav'uomo",
     artwork: Art28,
-    previewUrl: null,
+    previewUrl: StoriaDiUnBravuomoAudio,
     links: {
       spotify: "https://open.spotify.com/album/2nYSiCOQdQbVoVd6s136ky?si=MnMWaEa3SWe9WD9DcMkt8w",
-      appleMusic: null,
-      amazonMusic: null,
+      appleMusic: "https://music.apple.com/us/album/storia-di-un-bravuomo-single/1812226232",
+      amazonMusic: "https://music.amazon.it/albums/B0F7CP46Q5?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_LT3rBTHkRNTMEt3MMGbX2xrjV",
       soundcloud: "https://soundcloud.com/john-freedom-832358450/storia-di-un-bravuomo",
     },
   },
@@ -147,11 +153,11 @@ export const musicData = [
     id: 3,
     name: "V'ammazzo",
     artwork: CopertinaNuovaVammazzo,
-    previewUrl: null,
+    previewUrl: VammazzoAudio,
     links: {
       spotify: "https://open.spotify.com/album/6MOPDcHWH88BoD8Npg359T?si=hiJXwe6MTDGp4mLUKzqghA",
-      appleMusic: null,
-      amazonMusic: null,
+      appleMusic: "https://music.apple.com/us/album/vammazzo-single/1796632035",
+      amazonMusic: "https://music.amazon.it/albums/B0DWLYJMJ6?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_2pQmWCY9ZdQPHDUmkGhsUVkH9",
       soundcloud: "https://soundcloud.com/john-freedom-832358450/master-vammazzo-2",
     },
   },
@@ -159,11 +165,11 @@ export const musicData = [
     id: 4,
     name: "Mente Criminale",
     artwork: CopCriminaleJohnCopia,
-    previewUrl: null,
+    previewUrl: MenteCriminaleAudio,
     links: {
       spotify: "https://open.spotify.com/track/5DNnQxLinbzS4tTqlPeDA5?si=8a6704702eed47cd",
-      appleMusic: null,
-      amazonMusic: null,
+      appleMusic: "https://music.apple.com/us/album/mente-criminale-single/1826246899",
+      amazonMusic: "https://music.amazon.it/albums/B0FHBBSPMT?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_NABwc81EJWWEI5Dropw5bVeNI",
       soundcloud: "https://soundcloud.com/john-freedom-832358450/mente-criminale-4_master_1",
     },
   },

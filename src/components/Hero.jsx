@@ -34,8 +34,9 @@ const StyledHero = styled.header`
     height: 100%;
     background: ${({ theme }) =>
       theme.name === "light"
-        ? "linear-gradient(135deg, var(--bs-primary), var(--bs-light))"
-        : "linear-gradient(135deg, var(--bs-primary), var(--bs-dark))"};
+        ? `url(${Light}) center center no-repeat`
+        : `url(${Dark}) center center no-repeat`};
+    background-size: cover;
     z-index: -2;
   }
 
@@ -58,23 +59,18 @@ const StyledHero = styled.header`
     height: 10rem;
   }
 
-  @media screen and (min-width: 1180px) {
+  /* Responsive background adjustments for mobile */
+  @media screen and (max-width: 768px) {
     &::before {
-      background: ${({ theme }) =>
-        theme.name === "light"
-          ? `url(${Light}) top center fixed no-repeat`
-          : `url(${Dark}) top center fixed no-repeat`};
-      background-size: 100vw auto;
+      background-position: center center;
+      background-attachment: scroll;
     }
   }
 
-  @media screen and (min-width: 1367px) {
+  /* Ensure background images work on all screen sizes */
+  @media screen and (min-width: 1180px) {
     &::before {
-      background: ${({ theme }) =>
-        theme.name === "light"
-          ? `url(${Light}) center center fixed no-repeat`
-          : `url(${Dark}) center center fixed no-repeat`};
-      background-size: cover;
+      background-attachment: fixed;
     }
   }
 `;
