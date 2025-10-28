@@ -24,6 +24,7 @@ const navLinks = {
   to: [
     { id: "1T", name: "Home", to: "Home" },
     { id: "2T", name: "Bio", to: "Bio" },
+    { id: "2.5T", name: "Nuova uscita", to: "Nuova uscita" },
     { id: "3T", name: "Musica", to: "Musica" },
     { id: "4T", name: "Video", to: "Video" },
     { id: "5T", name: "Contatti", to: "Contatti" },

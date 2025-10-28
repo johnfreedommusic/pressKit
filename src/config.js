@@ -30,7 +30,7 @@ import MenteCriminaleAudio from "./audio/mente-criminale.mp3";
 export const githubUsername = "johnfreedommusic";
 
 // Navbar Logo images
-export const navLogo = NavLogoDark; // legacy single export (dark variant)
+export const navLogo = NavLogoLight; // use colored/logo longer for default
 export const navLogoDark = NavLogoDark;
 export const navLogoLight = NavLogoLight;
 
@@ -49,8 +49,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "John Freedom è un giovane immigrato italiano vissuto in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.";
-
+  "John Freedom è un giovane immigrato italiano vissuto in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\nNei suoi testi non fa a meno di denunciare il nuovo mondo che gli sta attorno, spesso confrontandolo con le sue origini. Tutto questo si riversa nel suo sound che unisce il vecchio e il nuovo, fondendo lo swing e l’elettronica, con sfumature jazz e blues.";
 /* Skills
  ************************************************************** 
   Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/

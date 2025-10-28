@@ -31,6 +31,8 @@ import Footer from "./components/Footer";
 import { footerTheme, navLogo } from "./config";
 // Util
 import { getStoredTheme, getPreferredTheme, setTheme } from "./utils";
+// Images
+import TabIcon from "./images/Untitled_design-removebg-preview.png";
 
 // #region component
 const propTypes = {
@@ -123,6 +125,15 @@ const App = ({ projectCardImages = [], filteredProjects = [] }) => {
   React.useEffect(() => {
     setThemes();
   }, [setThemes]);
+
+  // Set favicon to custom logo
+  React.useEffect(() => {
+    const link = document.querySelector("link[rel='icon']") || document.createElement("link");
+    link.rel = "icon";
+    link.type = "image/png";
+    link.href = TabIcon;
+    document.head.appendChild(link);
+  }, []);
 
   window
     .matchMedia("(prefers-color-scheme: dark)")

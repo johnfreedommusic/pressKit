@@ -5,6 +5,7 @@ import { useGetUsersQuery } from "../app/apiSlice";
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
+import NuovaUscita from "../components/NuovaUscita";
 import Musica from "../components/Musica";
 import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
@@ -18,18 +19,20 @@ const Home = () => {
   const { data: userData } = useGetUsersQuery();
 
   React.useEffect(() => {
-    updateTitle(`${userData.name} | Portfolio`);
+    const displayName = userData?.name || "John Freedom";
+    updateTitle(displayName);
   }, [userData]);
 
   return (
     <>
-      <Hero name={userData.name} />
+      <Hero name={userData?.name || "John Freedom"} />
       <main>
         <AboutMe
           avatar_url={userData.avatar_url}
           bio={userData.bio}
           moreInfo={moreInfo}
         />
+        <NuovaUscita />
         <Musica />
         <Projects filteredProjects={filteredProjects} />
         <Contact />
