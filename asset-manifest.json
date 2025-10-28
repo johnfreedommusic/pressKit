@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/pressKit/static/css/main.f3612727.css",
-    "main.js": "/pressKit/static/js/main.315ad0a8.js",
+    "main.js": "/pressKit/static/js/main.2a8c9de3.js",
     "static/media/TikTok Mente Criminale in Sala Prove Take 26.mp4": "/pressKit/static/media/TikTok Mente Criminale in Sala Prove Take 26.662f07ee27a2a5cb1b29.mp4",
-    "static/media/Reshape Videos for Press Kit 2.mp4": "/pressKit/static/media/Reshape Videos for Press Kit 2.7b426cc58d03ddc4d7b3.mp4",
-    "static/media/Reshape Videos for Press Kit 1.mp4": "/pressKit/static/media/Reshape Videos for Press Kit 1.ac4b2a936c573570f177.mp4",
+    "static/media/Reshape Videos for Press Kit 2.mp4": "/pressKit/static/media/Reshape Videos for Press Kit 2.2d9220b5c90386848d75.mp4",
+    "static/media/Reshape Videos for Press Kit 1.mp4": "/pressKit/static/media/Reshape Videos for Press Kit 1.7b426cc58d03ddc4d7b3.mp4",
     "static/media/5.jpg": "/pressKit/static/media/5.475a616d86d955c198ec.jpg",
     "static/media/3.jpg": "/pressKit/static/media/3.1462995f8aad69142f09.jpg",
     "static/media/hero-dark.jpg": "/pressKit/static/media/hero-dark.c6724567582b2edc85c3.jpg",
@@ -17,23 +17,26 @@
     "static/media/COP CRIMINALE JOHN - Copia.jpg": "/pressKit/static/media/COP CRIMINALE JOHN - Copia.d3de8433752d3e9d7507.jpg",
     "static/media/Copertina Nuova V'ammazzo.png": "/pressKit/static/media/Copertina Nuova V'ammazzo.c75a5c308ce2cae13330.png",
     "static/media/4.jpg": "/pressKit/static/media/4.8d18e3b510459886045d.jpg",
+    "static/media/John Freedom - La cometa di Halley.mp3": "/pressKit/static/media/John Freedom - La cometa di Halley.87e2f304437b318cd1a9.mp3",
     "static/media/mente-criminale.mp3": "/pressKit/static/media/mente-criminale.41c72adb73c67b15b2da.mp3",
     "static/media/storia-di-un-bravuomo.mp3": "/pressKit/static/media/storia-di-un-bravuomo.1d71a7d05de668fd94b3.mp3",
     "static/media/vammazzo.mp3": "/pressKit/static/media/vammazzo.fa3c7adc75ee5b8fe940.mp3",
     "static/media/immigrato-in-america.mp3": "/pressKit/static/media/immigrato-in-america.7d2dc0b2103425903583.mp3",
     "static/media/6.jpg": "/pressKit/static/media/6.21330fd9b92d65e97c09.jpg",
+    "static/media/Untitled_design-removebg-preview.png": "/pressKit/static/media/Untitled_design-removebg-preview.1256f4e8f4a94b54a592.png",
     "static/media/8.jpg": "/pressKit/static/media/8.488195c46a4f0da80a9b.jpg",
     "static/media/Logo Longer White.png": "/pressKit/static/media/Logo Longer White.62d0658cef689ceb1882.png",
     "static/media/Logo Longer.png": "/pressKit/static/media/Logo Longer.c66fc075e261543aaa2e.png",
+    "static/media/La cometa di Halley (Copertina).jpg": "/pressKit/static/media/La cometa di Halley (Copertina).08f1573a238ba8872a21.jpg",
     "service-worker.js": "/pressKit/service-worker.js",
     "static/media/defaultNavLogo.svg": "/pressKit/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/logo.svg": "/pressKit/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pressKit/index.html",
     "main.f3612727.css.map": "/pressKit/static/css/main.f3612727.css.map",
-    "main.315ad0a8.js.map": "/pressKit/static/js/main.315ad0a8.js.map"
+    "main.2a8c9de3.js.map": "/pressKit/static/js/main.2a8c9de3.js.map"
   },
   "entrypoints": [
     "static/css/main.f3612727.css",
-    "static/js/main.315ad0a8.js"
+    "static/js/main.2a8c9de3.js"
   ]
 }
